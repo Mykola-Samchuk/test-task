@@ -1,0 +1,114 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header-content,
+.main-content {
+  width: 95%;
+  display: flex;
+}
+/* header start */
+.header-content {
+  height: 70px;
+  margin-bottom: 3em;
+  border-radius: 10px;
+}
+.logo {
+  width: 200px;
+  height: 100%;
+
+  background-color: #a9a89f;
+  border-radius: 10px;
+}
+.header-link {
+  height: 100%;
+  width: 100%;
+  background-color: #b7b6a842;
+  border-radius: 10px;
+}
+.header-link,
+.logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.link {
+  width: 25%;
+  font-size: 1.5em;
+  text-decoration: none;
+  text-align: center;
+  color: rgb(99, 96, 96);
+  transition: 0.3s;
+}
+.link-logo {
+  width: 100%;
+}
+.link:hover {
+  color: rgb(223, 197, 95);
+}
+/* header end */
+/* main start */
+
+.img-content,
+.info-content {
+  width: 50%;
+  height: 250px;
+}
+.img-content {
+  height: 250px;
+  background-image: url(../img/planet.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+}
+.img-content-block {
+  width: 100%;
+  height: 250px;
+  background-image: url(../img/geo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  transition-duration: 2s;
+}
+.img-content-block:hover {
+  opacity: 50%;
+}
+.info-content {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #cbcac9;
+}
+.text-info {
+    height: 150px;
+  padding: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* main end */
+@media (max-width: 800px) {
+  .header-content,
+  .main-content {
+    width: 100%;
+  }
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    position: fixed;
+    top: 0;
+  }
+  .main-content {
+    margin-top: 70px;
+    flex-direction: column;
+  }
+  .info-content,
+  .img-content {
+    width: 100%;
+  }
+}
