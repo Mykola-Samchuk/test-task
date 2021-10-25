@@ -1,4 +1,6 @@
 body {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,18 +16,18 @@ body {
   height: 70px;
   margin-bottom: 3em;
   border-radius: 10px;
+  z-index: 1;
 }
 .logo {
   width: 200px;
   height: 100%;
-
-  background-color: #a9a89f;
+  background-color: rgb(209 176 109);
   border-radius: 10px;
 }
 .header-link {
   height: 100%;
   width: 100%;
-  background-color: #b7b6a842;
+  background-color: rgb(167 148 70);
   border-radius: 10px;
 }
 .header-link,
@@ -46,18 +48,18 @@ body {
   width: 100%;
 }
 .link:hover {
-  color: rgb(223, 197, 95);
+  color: rgb(255 255 255);
 }
 /* header end */
 /* main start */
-
+.main-content {
+  height: 100%;
+}
 .img-content,
 .info-content {
   width: 50%;
-  height: 250px;
 }
 .img-content {
-  height: 250px;
   background-image: url(../img/planet.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -65,7 +67,7 @@ body {
 }
 .img-content-block {
   width: 100%;
-  height: 250px;
+  height: 100%;
   background-image: url(../img/geo.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -75,15 +77,15 @@ body {
   opacity: 50%;
 }
 .info-content {
-  height: 250px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #cbcac9;
+  background-color: rgb(209 189 109);
 }
 .text-info {
-    height: 150px;
-  padding: 3em;
+  height: 100%;
+  padding: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,5 +112,8 @@ body {
   .info-content,
   .img-content {
     width: 100%;
+  }
+  .img-content {
+    height: 250px;
   }
 }
